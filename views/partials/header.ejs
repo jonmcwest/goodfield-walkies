@@ -38,27 +38,3 @@
 
 
   </nav>
-
-  <script>
-    const menu = document.getElementById('nav');
-    const toggle = document.getElementById('toggle');
-    let menuOpen = false;
-
-    toggle.addEventListener('click', (e) => {
-      if (menuOpen) {
-        toggle.style.transform = 'translateY(20px)'
-        menu.style.display = 'flex';
-        menu.clientHeight;
-        menu.style.opacity = '1';
-        menuOpen = false;
-      } else {
-        toggle.style.transform = 'translateY(0px)'
-        menu.style.opacity = '0';
-        menuOpen = true;
-        setTimeout(() => {
-          menu.style.display = 'none';
-        }, 500)
-      }
-
-    });
-  </script>

@@ -169,7 +169,7 @@ body {
         @media only screen and (max-width: 37.5em) {
           .nav__list-item:not(:last-child) {
             margin-right: 0;
-            margin-bottom: 5rem; } }
+            margin-bottom: 3rem; } }
   .nav__socials {
     width: 100%;
     display: flex;
