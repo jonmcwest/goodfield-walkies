@@ -11,6 +11,37 @@
     height: 100%;
   }
 
+  &__bar {
+    width: 100vw;
+    height: 7rem;
+    background-color: $color-primary;
+    padding: 0 4rem;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
+
+    @include respond(phone) {
+      display: flex;
+    }
+
+
+    &-toggle {
+      width: 5rem;
+      height: 5rem;
+      padding: 8px 5px;
+      border: solid 2px $color-off-white;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+    }
+
+  }
+
 
   &__logo {
     height: 100%;
@@ -18,6 +49,12 @@
     @include respond(tab-port) {
       margin-bottom: 2rem;
       height: 10vh;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+      height: 100%;
+      margin-top: 10rem;
     }
   }
 
@@ -33,10 +70,21 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      width: 100vw;
+      height: 100vh;
+      background-color: $color-primary;
+      display: none;
     }
 
     &-item {
       font-size: 1.6rem;
+      cursor: pointer;
+      user-select: none;
+
+      @include respond(phone) {
+        font-size: 3rem;
+        color: white;
+      }
 
 
 
@@ -49,7 +97,7 @@
 
         @include respond(phone) {
           margin-right: 0;
-          margin-bottom: 2rem;
+          margin-bottom: 5rem;
         }
 
       }
@@ -57,10 +105,16 @@
   }
 
   &__socials {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     i {
       &:not(:last-child) {
         margin-right: 2rem;
+
+
       }
     }
   }

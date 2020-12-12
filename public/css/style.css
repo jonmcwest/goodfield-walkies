@@ -101,12 +101,40 @@ body {
     .nav {
       flex-direction: column;
       height: 100%; } }
+  .nav__bar {
+    width: 100vw;
+    height: 7rem;
+    background-color: #2FAc66;
+    padding: 0 4rem;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    display: none;
+    align-items: center;
+    justify-content: flex-end; }
+    @media only screen and (max-width: 37.5em) {
+      .nav__bar {
+        display: flex; } }
+    .nav__bar-toggle {
+      width: 5rem;
+      height: 5rem;
+      padding: 8px 5px;
+      border: solid 2px #F8F8F8;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
   .nav__logo {
     height: 100%; }
     @media only screen and (max-width: 56.25em) {
       .nav__logo {
         margin-bottom: 2rem;
         height: 10vh; } }
+    @media only screen and (max-width: 37.5em) {
+      .nav__logo {
+        width: 100%;
+        height: 100%;
+        margin-top: 10rem; } }
   .nav__list {
     list-style: none;
     display: flex;
@@ -118,9 +146,19 @@ body {
         position: fixed;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%); } }
+        transform: translate(-50%, -50%);
+        width: 100vw;
+        height: 100vh;
+        background-color: #2FAc66;
+        display: none; } }
     .nav__list-item {
-      font-size: 1.6rem; }
+      font-size: 1.6rem;
+      cursor: pointer;
+      user-select: none; }
+      @media only screen and (max-width: 37.5em) {
+        .nav__list-item {
+          font-size: 3rem;
+          color: white; } }
       .nav__list-item:not(:last-child) {
         margin-right: 2rem; }
         @media only screen and (max-width: 56.25em) {
@@ -129,6 +167,11 @@ body {
         @media only screen and (max-width: 37.5em) {
           .nav__list-item:not(:last-child) {
             margin-right: 0;
-            margin-bottom: 2rem; } }
-  .nav__socials i:not(:last-child) {
-    margin-right: 2rem; }
+            margin-bottom: 5rem; } }
+  .nav__socials {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .nav__socials i:not(:last-child) {
+      margin-right: 2rem; }

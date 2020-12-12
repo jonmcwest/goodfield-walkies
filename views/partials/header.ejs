@@ -16,9 +16,18 @@
 </head>
 
 <body>
+
+  <div class="nav__bar">
+    <div class="nav__bar-toggle" id="toggle">
+      <hr>
+      <hr>
+      <hr>
+    </div>
+  </div>
+
   <nav class="nav">
     <img class="nav__logo" src="img/main-logo@2x.png" alt="" />
-    <ul class="nav__list">
+    <ul class="nav__list" id="nav">
       <li class="nav__list-item">Home</li>
       <li class="nav__list-item">About</li>
       <li class="nav__list-item">Services</li>
@@ -26,4 +35,23 @@
       <li class="nav__list-item nav__socials"><i class="fab fa-instagram fa-2x"></i><i
           class="fab fa-facebook fa-2x"></i></li>
     </ul>
+
+
   </nav>
+
+  <script>
+    const menu = document.getElementById('nav');
+    const toggle = document.getElementById('toggle');
+    let menuOpen = false;
+
+    toggle.addEventListener('click', (e) => {
+      if (menuOpen) {
+        menu.style.display = 'flex';
+        menuOpen = false;
+      } else {
+        menu.style.display = 'none';
+        menuOpen = true;
+      }
+
+    });
+  </script>
