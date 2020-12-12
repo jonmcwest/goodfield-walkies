@@ -114,7 +114,11 @@ body {
     @media only screen and (max-width: 37.5em) {
       .nav__list {
         flex-direction: column;
-        justify-content: center; } }
+        justify-content: center;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); } }
     .nav__list-item {
       font-size: 1.6rem; }
       .nav__list-item:not(:last-child) {
@@ -125,4 +129,6 @@ body {
         @media only screen and (max-width: 37.5em) {
           .nav__list-item:not(:last-child) {
             margin-right: 0;
-            margin-bottom: 1rem; } }
+            margin-bottom: 2rem; } }
+  .nav__socials i:not(:last-child) {
+    margin-right: 2rem; }

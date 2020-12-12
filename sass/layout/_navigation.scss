@@ -29,6 +29,10 @@
     @include respond(phone) {
       flex-direction: column;
       justify-content: center;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
 
     &-item {
@@ -45,9 +49,18 @@
 
         @include respond(phone) {
           margin-right: 0;
-          margin-bottom: 1rem;
+          margin-bottom: 2rem;
         }
 
+      }
+    }
+  }
+
+  &__socials {
+
+    i {
+      &:not(:last-child) {
+        margin-right: 2rem;
       }
     }
   }
