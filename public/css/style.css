@@ -123,7 +123,8 @@ body {
       border-radius: 10px;
       display: flex;
       flex-direction: column;
-      justify-content: space-around; }
+      justify-content: space-around;
+      transition: .5s; }
   .nav__logo {
     height: 100%; }
     @media only screen and (max-width: 56.25em) {
@@ -138,7 +139,8 @@ body {
   .nav__list {
     list-style: none;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    transition: .5s; }
     @media only screen and (max-width: 37.5em) {
       .nav__list {
         flex-direction: column;
