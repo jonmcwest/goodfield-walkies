@@ -1,0 +1,54 @@
+.nav {
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+    height: 100%;
+  }
+
+
+  &__logo {
+    height: 100%;
+
+    @include respond(tab-port) {
+      margin-bottom: 2rem;
+      height: 10vh;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    @include respond(phone) {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &-item {
+      font-size: 1.6rem;
+
+
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+
+        @include respond(tab-port) {
+          margin-right: 4rem;
+        }
+
+        @include respond(phone) {
+          margin-right: 0;
+          margin-bottom: 1rem;
+        }
+
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box;
+  position: relative;
+  background-color: #F8F8F8; }
+
+::selection {
+  background-color: #26547c;
+  color: #2FAc66; }
+
+* {
+  font-family: 'Lato', sans-serif; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-left-text {
+  text-align: left !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-bottom-medium {
+      margin-bottom: 3rem !important; } }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-bottom-big {
+      margin-bottom: 5rem !important; } }
+
+.u-margin-top-small {
+  margin-top: 1.5rem !important; }
+
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
+.u-margin-top-huge {
+  margin-top: 10rem !important; }
+
+.u-margin-left-small {
+  margin-left: 1.5rem !important; }
+
+.u-margin-right-small {
+  margin-right: 1.5rem !important; }
+
+.u-hide {
+  visibility: hidden; }
+
+.u-show {
+  visibility: visible; }
+
+.nav {
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .nav {
+      flex-direction: column;
+      height: 100%; } }
+  .nav__logo {
+    height: 100%; }
+    @media only screen and (max-width: 56.25em) {
+      .nav__logo {
+        margin-bottom: 2rem;
+        height: 10vh; } }
+  .nav__list {
+    list-style: none;
+    display: flex;
+    align-items: center; }
+    @media only screen and (max-width: 37.5em) {
+      .nav__list {
+        flex-direction: column;
+        justify-content: center; } }
+    .nav__list-item {
+      font-size: 1.6rem; }
+      .nav__list-item:not(:last-child) {
+        margin-right: 2rem; }
+        @media only screen and (max-width: 56.25em) {
+          .nav__list-item:not(:last-child) {
+            margin-right: 4rem; } }
+        @media only screen and (max-width: 37.5em) {
+          .nav__list-item:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 1rem; } }
