@@ -98,9 +98,12 @@ body {
   background-position: center;
   background-attachment: fixed;
   overflow: hidden; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 56.25em) {
     .header {
       height: 40vh; } }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      height: 120%; } }
   .header__heading {
     text-align: center;
     font-size: 5.5rem;
@@ -205,7 +208,6 @@ body {
       margin-right: 2rem; }
 
 .section-about {
-  height: 100vh;
   width: 100vw; }
   .section-about__heading {
     text-align: center;
@@ -216,21 +218,36 @@ body {
     .section-about__heading i {
       color: #2FAc66;
       padding: 2rem; }
+      @media only screen and (max-width: 37.5em) {
+        .section-about__heading i {
+          display: block; } }
   .section-about__list {
     justify-content: center;
     display: flex;
     list-style: none; }
+    @media only screen and (max-width: 37.5em) {
+      .section-about__list {
+        flex-direction: column;
+        align-items: center; } }
     .section-about__list-item {
       font-size: 2.5rem;
       padding: 0 2rem; }
+      @media only screen and (max-width: 37.5em) {
+        .section-about__list-item {
+          font-size: 3rem;
+          padding: 1.5rem 2rem; } }
       .section-about__list-item i {
         padding: 0 1rem;
         color: #2FAc66; }
   .section-about__composition {
-    margin-top: 8rem;
+    margin: 7rem 0;
+    padding-bottom: 12rem;
     display: flex;
     align-items: center;
     justify-content: center; }
+    @media only screen and (max-width: 56.25em) {
+      .section-about__composition {
+        flex-direction: column; } }
 
 .composition {
   position: relative; }
@@ -239,12 +256,18 @@ body {
     width: 20%;
     margin: 0 6rem;
     position: relative; }
+    @media only screen and (max-width: 56.25em) {
+      .composition__content {
+        width: 80%;
+        text-align: justify; } }
   .composition__heading {
+    display: flex;
+    justify-content: center;
     color: #26547c;
     font-size: 2rem;
     margin-bottom: 1.2rem; }
   .composition__text {
-    font-size: 1.4rem; }
+    font-size: 1.6rem; }
   .composition__image img {
     width: 20rem; }
   .composition .content--left {
@@ -256,6 +279,9 @@ body {
   .composition .arrow {
     width: 14rem;
     position: absolute; }
+    @media only screen and (max-width: 56.25em) {
+      .composition .arrow {
+        display: none; } }
     .composition .arrow--1 {
       transform: rotate(180deg);
       right: -6rem;
@@ -263,3 +289,17 @@ body {
     .composition .arrow--2 {
       left: -6rem;
       top: -4rem; }
+
+.vis-tablet {
+  display: none; }
+  @media only screen and (max-width: 56.25em) {
+    .vis-tablet {
+      display: flex;
+      position: relative;
+      top: 10rem; } }
+
+.vis-wider-tablet {
+  display: block; }
+  @media only screen and (max-width: 56.25em) {
+    .vis-wider-tablet {
+      display: none; } }

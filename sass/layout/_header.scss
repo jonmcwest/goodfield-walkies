@@ -7,8 +7,12 @@
   background-attachment: fixed;
   overflow: hidden;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     height: 40vh;
+  }
+
+  @include respond(phone) {
+    height: 120%;
   }
 
   &__heading {
