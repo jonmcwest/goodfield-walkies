@@ -227,22 +227,39 @@ body {
         padding: 0 1rem;
         color: #2FAc66; }
   .section-about__composition {
-    margin-top: 5rem;
+    margin-top: 8rem;
     display: flex;
     align-items: center;
     justify-content: center; }
 
-.composition__content {
-  text-align: center;
-  width: 20%;
-  margin: 0 4rem; }
-
-.composition__heading {
-  font-size: 2rem;
-  margin-bottom: 1.2rem; }
-
-.composition__text {
-  font-size: 1.4rem; }
-
-.composition__image img {
-  width: 20rem; }
+.composition {
+  position: relative; }
+  .composition__content {
+    text-align: center;
+    width: 20%;
+    margin: 0 6rem;
+    position: relative; }
+  .composition__heading {
+    color: #26547c;
+    font-size: 2rem;
+    margin-bottom: 1.2rem; }
+  .composition__text {
+    font-size: 1.4rem; }
+  .composition__image img {
+    width: 20rem; }
+  .composition .content--left {
+    position: relative;
+    top: 6rem; }
+  .composition .content--right {
+    position: relative;
+    bottom: 6rem; }
+  .composition .arrow {
+    width: 14rem;
+    position: absolute; }
+    .composition .arrow--1 {
+      transform: rotate(180deg);
+      right: -6rem;
+      top: -6rem; }
+    .composition .arrow--2 {
+      left: -6rem;
+      top: -4rem; }

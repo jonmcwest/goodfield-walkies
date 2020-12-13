@@ -32,7 +32,7 @@
   }
 
   &__composition {
-    margin-top: 5rem;
+    margin-top: 8rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,13 +41,17 @@
 
 .composition {
 
+  position: relative;
+
   &__content {
     text-align: center;
     width: 20%;
-    margin: 0 4rem;
+    margin: 0 6rem;
+    position: relative;
   }
 
   &__heading {
+    color: $color-secondary;
     font-size: 2rem;
     margin-bottom: 1.2rem;
   }
@@ -60,6 +64,35 @@
 
     img {
       width: 20rem;
+    }
+  }
+
+  .content {
+    &--left {
+      position: relative;
+      top: 6rem;
+    }
+
+    &--right {
+      position: relative;
+      bottom: 6rem;
+    }
+  }
+
+  .arrow {
+    width: 14rem;
+    position: absolute;
+
+
+    &--1 {
+      transform: rotate(180deg);
+      right: -6rem;
+      top: -6rem;
+    }
+
+    &--2 {
+      left: -6rem;
+      top: -4rem;
     }
   }
 }
