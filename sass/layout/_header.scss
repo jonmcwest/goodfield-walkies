@@ -1,0 +1,30 @@
+.header {
+  width: 100vw;
+  height: 88vh;
+  background-image: url(/img/dog-group.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+
+  @include respond(phone) {
+    height: 40vh;
+  }
+
+  &__heading {
+    text-align: center;
+    font-size: 5.5rem;
+    padding: 6rem 10rem 15rem 10rem;
+    color: $color-secondary;
+    background-image: linear-gradient(rgba($color-white, 1), rgba($color-white, 0));
+
+
+    @include respond(phone) {
+      background-color: rgba($color-white, .56);
+      background-image: none;
+      padding: 2rem 2rem;
+      font-size: 5rem;
+    }
+
+  }
+}

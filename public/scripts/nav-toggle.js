@@ -26,6 +26,7 @@ function closeMenu() {
   toggle.style.transform = 'translateY(0px)'
   menu.style.opacity = '0';
   isMenuOpen = false;
+  menu.style.display = 'none';
 }
 
 function openMenu() {

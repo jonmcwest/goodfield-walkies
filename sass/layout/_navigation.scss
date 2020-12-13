@@ -1,10 +1,12 @@
 .nav {
-  height: 15vh;
+  height: 12vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 5rem;
+  padding: 1rem 5rem;
+  box-shadow: 0 0 5rem rgba($color-black, .5);
+  position: relative;
 
   @include respond(tab-port) {
     flex-direction: column;
@@ -45,6 +47,7 @@
 
   &__logo {
     height: 100%;
+
 
     @include respond(tab-port) {
       margin-bottom: 2rem;

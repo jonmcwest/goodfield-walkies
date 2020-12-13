@@ -90,13 +90,39 @@ body {
 .u-show {
   visibility: visible; }
 
+.header {
+  width: 100vw;
+  height: 88vh;
+  background-image: url(/img/dog-group.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden; }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      height: 40vh; } }
+  .header__heading {
+    text-align: center;
+    font-size: 5.5rem;
+    padding: 6rem 10rem 15rem 10rem;
+    color: #26547c;
+    background-image: linear-gradient(white, rgba(255, 255, 255, 0)); }
+    @media only screen and (max-width: 37.5em) {
+      .header__heading {
+        background-color: rgba(255, 255, 255, 0.56);
+        background-image: none;
+        padding: 2rem 2rem;
+        font-size: 5rem; } }
+
 .nav {
-  height: 15vh;
+  height: 12vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 5rem; }
+  padding: 1rem 5rem;
+  box-shadow: 0 0 5rem rgba(0, 0, 0, 0.5);
+  position: relative; }
   @media only screen and (max-width: 56.25em) {
     .nav {
       flex-direction: column;
@@ -177,3 +203,46 @@ body {
     justify-content: center; }
     .nav__socials i:not(:last-child) {
       margin-right: 2rem; }
+
+.section-about {
+  height: 100vh;
+  width: 100vw; }
+  .section-about__heading {
+    text-align: center;
+    letter-spacing: .5rem;
+    font-size: 5rem;
+    color: #26547c;
+    padding: 5rem 5rem 3rem 5rem; }
+    .section-about__heading i {
+      color: #2FAc66;
+      padding: 2rem; }
+  .section-about__list {
+    justify-content: center;
+    display: flex;
+    list-style: none; }
+    .section-about__list-item {
+      font-size: 2.5rem;
+      padding: 0 2rem; }
+      .section-about__list-item i {
+        padding: 0 1rem;
+        color: #2FAc66; }
+  .section-about__composition {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+.composition__content {
+  text-align: center;
+  width: 20%;
+  margin: 0 4rem; }
+
+.composition__heading {
+  font-size: 2rem;
+  margin-bottom: 1.2rem; }
+
+.composition__text {
+  font-size: 1.4rem; }
+
+.composition__image img {
+  width: 20rem; }
