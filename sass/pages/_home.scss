@@ -66,27 +66,4 @@
 
 .section-services {
   width: 100vw;
-  height: 100vh;
-}
-
-.card {
-  width: 40%;
-  padding: 2rem 2rem 0 2rem;
-  background-color: $color-white;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  &__dog {
-    height: 10rem;
-  }
-
-  &__container {
-    margin: auto;
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
 }

@@ -8,11 +8,14 @@
   overflow: hidden;
 
   @include respond(tab-port) {
-    height: 40vh;
+    height: 50vh;
+    background-position: center;
   }
 
   @include respond(phone) {
-    height: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__heading {
@@ -20,15 +23,17 @@
     font-size: 5.5rem;
     padding: 6rem 10rem 15rem 10rem;
     color: $color-secondary;
-    background-image: linear-gradient(rgba($color-white, 1), rgba($color-white, 0));
-
+    background-image: linear-gradient(
+      rgba($color-white, 1),
+      rgba($color-white, 0)
+    );
 
     @include respond(phone) {
-      background-color: rgba($color-white, .56);
+      background-color: rgba($color-white, 0.56);
       background-image: none;
       padding: 2rem 2rem;
-      font-size: 5rem;
+      font-size: 4rem;
+      width: 100%;
     }
-
   }
 }

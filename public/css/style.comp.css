@@ -213,6 +213,12 @@ body {
     .vis-wider-tablet {
       display: none; } }
 
+.paw-border {
+  width: 100%;
+  background-color: red; }
+  .paw-border .paws {
+    width: 100%; }
+
 .header {
   width: 100vw;
   height: 88vh;
