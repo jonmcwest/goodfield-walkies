@@ -1,0 +1,83 @@
+.composition {
+  position: relative;
+
+  &__content {
+    text-align: center;
+    width: 40%;
+    margin: 0 6rem;
+    position: relative;
+
+    @include respond(tab-port) {
+      width: 80%;
+      text-align: justify;
+    }
+  }
+
+  &__heading {
+    display: flex;
+    justify-content: center;
+    color: $color-secondary;
+    font-size: 2rem;
+    margin: 1.2rem 0;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+  }
+
+  &__image {
+    img {
+      width: 20rem;
+    }
+  }
+
+  .content {
+    &--left {
+      position: relative;
+      top: 6rem;
+    }
+
+    &--right {
+      position: relative;
+      bottom: 6rem;
+    }
+  }
+
+  .arrow {
+    width: 14rem;
+    position: absolute;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+
+    &--1 {
+      transform: rotate(180deg);
+      right: -6rem;
+      top: -6rem;
+    }
+
+    &--2 {
+      left: -6rem;
+      top: -4rem;
+    }
+  }
+}
+
+.vis-tablet {
+  display: none;
+
+  @include respond(tab-port) {
+    display: flex;
+    position: relative;
+    top: 10rem;
+  }
+}
+
+.vis-wider-tablet {
+  display: block;
+
+  @include respond(tab-port) {
+    display: none;
+  }
+}

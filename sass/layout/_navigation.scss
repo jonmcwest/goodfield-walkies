@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem 5rem;
-  box-shadow: 0 0 5rem rgba($color-black, .5);
+  box-shadow: 0 0 5rem rgba($color-black, 0.5);
   position: relative;
 
   @include respond(tab-port) {
@@ -17,7 +17,7 @@
     width: 100vw;
     height: 7rem;
     background-color: $color-primary;
-    padding: 0 4rem;
+    padding: 0 1rem;
     position: fixed;
     z-index: 1000;
     top: 0;
@@ -29,7 +29,6 @@
       display: flex;
     }
 
-
     &-toggle {
       width: 5rem;
       height: 5rem;
@@ -39,15 +38,12 @@
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      transition: .5s;
+      transition: 0.5s;
     }
-
   }
-
 
   &__logo {
     height: 100%;
-
 
     @include respond(tab-port) {
       margin-bottom: 2rem;
@@ -55,8 +51,7 @@
     }
 
     @include respond(phone) {
-      width: 100%;
-      height: 100%;
+      height: 8rem;
       margin-top: 10rem;
     }
   }
@@ -65,7 +60,9 @@
     list-style: none;
     display: flex;
     align-items: center;
-    transition: .5s;
+    transition: 0.5s;
+    position: relative;
+    z-index: 2;
 
     @include respond(phone) {
       flex-direction: column;
@@ -90,8 +87,6 @@
         color: white;
       }
 
-
-
       &:not(:last-child) {
         margin-right: 2rem;
 
@@ -103,7 +98,6 @@
           margin-right: 0;
           margin-bottom: 3rem;
         }
-
       }
     }
   }
@@ -117,8 +111,6 @@
     i {
       &:not(:last-child) {
         margin-right: 2rem;
-
-
       }
     }
   }

@@ -92,41 +92,21 @@ body {
 
 .card {
   width: 40%;
-  padding: 1rem;
+  padding: 2rem 2rem 0 2rem;
   background-color: #fff;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 1.5rem 1.5rem 2.5rem rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 0 5rem rgba(0, 0, 0, 0.5); }
+  .card__dog {
+    height: 10rem; }
   .card__container {
     margin: auto;
     width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-around; }
-  .card__title {
-    color: #2FAc66;
-    font-size: 4rem; }
-  .card__price {
-    color: #26547c;
-    font-size: 5rem;
-    padding: 2rem 0; }
-    .card__price--sub {
-      font-size: 1.5rem; }
-  .card__list {
-    list-style: none;
-    padding: 2rem 0; }
-    .card__list-item {
-      font-size: 2rem; }
-    .card__list i {
-      padding: 1rem;
-      color: #2FAc66;
-      font-size: 2.4rem; }
-    .card__list .cross {
-      color: #f4b942; }
-  .card__dog {
-    height: 10rem; }
 
 .composition {
   position: relative; }
