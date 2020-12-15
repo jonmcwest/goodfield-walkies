@@ -481,3 +481,27 @@ body {
 
 .section-reviews {
   width: 100vw; }
+
+.section-guidelines {
+  width: 100vw;
+  padding: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff; }
+  .section-guidelines .guidelines {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .section-guidelines .guidelines .btn {
+      width: 30%; }
+  .section-guidelines h3 {
+    font-size: 4rem;
+    text-align: center;
+    color: #26547c; }
+  .section-guidelines .affiliate {
+    width: 15%; }
+    .section-guidelines .affiliate img {
+      width: 100%; }
