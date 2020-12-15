@@ -81,6 +81,10 @@
   justify-content: space-between;
   background-color: $color-white;
 
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+
 
   .guidelines {
     width: 60%;
@@ -89,8 +93,18 @@
     justify-content: center;
     align-items: center;
 
+    @include respond(tab-port) {
+      width: 90%;
+    }
+
     .btn {
       width: 30%;
+      text-align: center;
+
+      @include respond(tab-port) {
+        padding: 3rem;
+        width: 60%;
+      }
     }
   }
 
@@ -102,6 +116,12 @@
 
   .affiliate {
     width: 15%;
+
+    @include respond(tab-port) {
+      padding: 3rem;
+      width: 80%;
+    }
+
 
     img {
       width: 100%;

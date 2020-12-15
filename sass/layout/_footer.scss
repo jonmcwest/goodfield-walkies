@@ -1,12 +1,15 @@
 .footer {
   width: 100vw;
-  height: 50vh;
   background-color: $color-secondary;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5rem 8rem;
+  padding: 5rem 4rem;
   color: $color-white;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
 
   &__container {
     width: 33.33333%;
@@ -16,9 +19,21 @@
     justify-content: center;
     flex-direction: column;
 
+    @include respond(tab-port) {
+      padding: 2rem;
+      width: 90%;
+    }
+
     &:nth-last-of-type(2) {
       border-left: 1px solid $color-white;
       border-right: 1px solid $color-white;
+
+      @include respond(tab-port) {
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid $color-white;
+        border-bottom: 1px solid $color-white;
+      }
     }
   }
 
