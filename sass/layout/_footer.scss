@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 5rem 8rem;
+  color: $color-white;
 
   &__container {
     width: 33.33333%;
@@ -13,10 +14,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
     &:nth-last-of-type(2) {
       border-left: 1px solid $color-white;
       border-right: 1px solid $color-white;
+    }
+  }
+
+  &__header {
+    font-size: 2rem;
+  }
+
+  &__logo {
+    width: 20%;
+    padding: 1rem 0;
+
+    &-text {
+      font-size: 1.6rem;
+      color: $color-white;
     }
   }
 
@@ -28,9 +44,12 @@
     justify-content: center;
 
     &-item {
-      color: $color-white;
       padding: 1rem 0;
       font-size: 1.6rem;
+
+      i {
+        margin-right: 1rem;
+      }
     }
   }
 }
