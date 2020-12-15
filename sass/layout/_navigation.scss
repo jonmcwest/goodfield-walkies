@@ -63,6 +63,7 @@
     transition: 0.5s;
     position: relative;
     z-index: 2;
+    color: $color-secondary;
 
     @include respond(phone) {
       flex-direction: column;
@@ -81,6 +82,12 @@
       font-size: 1.6rem;
       cursor: pointer;
       user-select: none;
+      transition: .3s;
+
+      &:not(:last-child):hover {
+        color: $color-primary;
+        transform: scale(1.1);
+      }
 
       @include respond(phone) {
         font-size: 3rem;
@@ -109,6 +116,14 @@
     justify-content: center;
 
     i {
+
+      transition: .3s;
+
+      &:hover {
+        color: $color-primary;
+        transform: scale(1.1);
+      }
+
       &:not(:last-child) {
         margin-right: 2rem;
       }

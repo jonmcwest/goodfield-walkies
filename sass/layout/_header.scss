@@ -20,13 +20,10 @@
 
   &__heading {
     text-align: center;
-    font-size: 5.5rem;
-    padding: 6rem 10rem 15rem 10rem;
-    color: $color-secondary;
-    background-image: linear-gradient(
-      rgba($color-white, 1),
-      rgba($color-white, 0)
-    );
+    font-size: 4rem;
+    padding: 5rem 10rem 5rem 10rem;
+    color: $color-white;
+    background-color: rgba($color-primary, 0.56);
 
     @include respond(phone) {
       background-color: rgba($color-white, 0.56);

@@ -10,7 +10,7 @@
   text-decoration: none;
   margin: 2rem;
   transition: 0.2s;
-  box-shadow: 0 0.2rem 1rem rgba($color-black, 0.5);
+  box-shadow: 0 0.2rem .5rem rgba($color-black, 0.5);
 
   &--secondary {
     background-color: $color-secondary;
@@ -19,6 +19,6 @@
 
   &:hover {
     transform: scale(1.05) translateY(-2px);
-    box-shadow: 0 0.2rem 1.5rem rgba($color-black, 0.5);
+    box-shadow: 0 0.2rem 1.5rem rgba($color-black, 0.3);
   }
 }
