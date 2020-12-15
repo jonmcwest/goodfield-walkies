@@ -1,4 +1,4 @@
-<section class="section-slideshow">
+<section class="section-slideshow slideshow">
 
   <h2 class="slideshow__heading">Owner & Doggy Reviews</h2>
 
@@ -82,27 +82,29 @@
 </section>
 
 <script>
-const slideshows = document.querySelectorAll('[data-component="slideshow"]');
-  
+  const slideshows = document.querySelectorAll('.slideshow__container');
+
   // Apply to all slideshows that you define with the markup wrote
   slideshows.forEach(initSlideShow);
 
   function initSlideShow(slideshow) {
 
-    var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`); // Get an array of slides
+    var slides = document.querySelectorAll(`.slideshow__slide`); // Get an array of slides
+    console.log(slides)
 
-    var index = 0, time = 5000;
-    slides[index].classList.add('active');  
-    
-    setInterval( () => {
+    var index = 0,
+      time = 5000;
+    slides[index].classList.add('active');
+
+    setInterval(() => {
       slides[index].classList.remove('active');
-      
+
       //Go over each slide incrementing the index
       index++;
-      
+
       // If you go over all slides, restart the index to show the first slide and start again
-      if (index === slides.length) index = 0; 
-      
+      if (index === slides.length) index = 0;
+
       slides[index].classList.add('active');
 
     }, time);
