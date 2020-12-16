@@ -10,6 +10,7 @@
   @include respond(tab-port) {
     height: 50vh;
     background-position: center;
+
   }
 
   @include respond(phone) {
@@ -31,6 +32,7 @@
       padding: 2rem 2rem;
       font-size: 4rem;
       width: 100%;
+      color: $color-secondary;
     }
   }
 }

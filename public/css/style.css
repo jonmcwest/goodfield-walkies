@@ -386,7 +386,8 @@ body {
         background-image: none;
         padding: 2rem 2rem;
         font-size: 4rem;
-        width: 100%; } }
+        width: 100%;
+        color: #26547c; } }
 
 .nav {
   height: 12vh;
@@ -499,11 +500,11 @@ body {
   .nav__socials {
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
     cursor: pointer; }
     .nav__socials i {
-      transition: .3s; }
+      transition: .3s;
+      padding: 1rem; }
       .nav__socials i:hover {
         color: #2FAc66;
         transform: scale(1.1); }

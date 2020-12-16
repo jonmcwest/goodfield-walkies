@@ -4,6 +4,10 @@ let isMenuOpen = false;
 
 window.onresize = reportWindowSize;
 
+nav.addEventListener('click', (e) => {
+  closeMenu()
+});
+
 toggle.addEventListener('click', (e) => {
   if (isMenuOpen) {
     closeMenu()
