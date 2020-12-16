@@ -50,11 +50,11 @@
           <p class="review__title">Eve - 2021</p>
           <img src="img/stars.png" alt="5 Stars" class="review__stars">
         </div>
-        <p class="review__text">Waaaaaaaahhhhh</p>
+        <p class="review__text">Holly is such a lovely lady and so caring with our pooch! Can't beat her service!</p>
       </div>
     </div>
 
-    <div class="slideshow__slide slide--3">
+    <!-- <div class="slideshow__slide slide--3">
       <div class="review">
         <div class="review__header">
           <p class="review__title">Bailey - 2021</p>
@@ -77,36 +77,7 @@
         </div>
         <p class="review__text">Excellent, reliable service.</p>
       </div>
-    </div>
+    </div> -->
   </div>
 
 </section>
-
-<script>
-  const slideshows = document.querySelectorAll('.slideshow__container');
-
-  // Applies JS to all slideshows
-  slideshows.forEach(initSlideShow);
-
-  function initSlideShow(slideshow) {
-
-    var slides = document.querySelectorAll(`.slideshow__slide`); // declare array of slides
-
-    var index = 0,
-      time = 5000;
-    slides[index].classList.add('active');
-
-    setInterval(() => {
-      slides[index].classList.remove('active');
-
-      //Go over each slide incrementing the index
-      index++;
-
-      // If you go over all slides, restart the index to show the first slide and start again
-      if (index === slides.length) index = 0;
-
-      slides[index].classList.add('active');
-
-    }, time);
-  }
-</script>
