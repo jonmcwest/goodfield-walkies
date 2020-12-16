@@ -129,7 +129,10 @@ body {
     width: 80%;
     display: flex;
     align-items: center;
-    justify-content: space-around; }
+    justify-content: space-around;
+    overflow: hidden;
+    position: relative;
+    z-index: 2000; }
     @media only screen and (max-width: 56.25em) {
       .card__container {
         flex-direction: column;
@@ -559,8 +562,21 @@ body {
         flex-direction: column; } }
 
 .section-services {
+  position: relative;
   width: 100vw;
-  padding-bottom: 2rem; }
+  padding: 5rem 0;
+  margin: 10rem 0;
+  background-image: linear-gradient(to top, rgba(47, 172, 102, 0.2), rgba(47, 172, 102, 0.9)), url(/img/dog-group.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .section-services .circle {
+    position: absolute;
+    z-index: 1000;
+    mix-blend-mode: overlay; }
 
 .section-reviews {
   width: 100vw; }
@@ -571,7 +587,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fff; }
+  background-color: #F8F8F8; }
   @media only screen and (max-width: 56.25em) {
     .section-guidelines {
       flex-direction: column; } }

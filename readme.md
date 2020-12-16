@@ -1,5 +1,3 @@
 # Goodfield Walkies Website
 
-#### Navbar
-
-Fully responsive handbuilt navbar with SASS
+Fully responsive handbuilt with SASS and vanilla JS
