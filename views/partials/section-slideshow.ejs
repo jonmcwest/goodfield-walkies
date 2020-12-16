@@ -1,4 +1,4 @@
-<section class="section-slideshow slideshow">
+<section class="section-slideshow" id="reviews">
 
   <h2 class="slideshow__heading">Owner & Doggy Reviews</h2>
 
@@ -28,55 +28,56 @@
         <p class="review__text">Woof Woof Woof, sniff, woof, slobber, woof!</p>
       </div>
     </div>
+
     <div class="slideshow__slide slide--2">
       <div class="review">
         <div class="review__header">
-          <p class="review__title">Georgia - 2021</p>
+          <p class="review__title">Gary - 2021</p>
           <img src="img/stars.png" alt="5 Stars" class="review__stars">
         </div>
-        <p class="review__text">Bailey had a great walk out with Holly! He came back and conked out within 5 minutes!
-          Couldn’t recommend enough 🐶</p>
+        <p class="review__text">Excellent Dog walker, on time, reliable & great with my dogs</p>
       </div>
       <div class="review">
         <div class="review__header">
-          <p class="review__title">Amy - 2021</p>
+          <p class="review__title">Jon - 2021</p>
           <img src="img/stars.png" alt="5 Stars" class="review__stars">
         </div>
-        <p class="review__text">Excellent, reliable service.</p>
+        <p class="review__text">Daisy always gets so excited when she sees Holly! Best dog walker in Wiltshire by far.
+        </p>
       </div>
       <div class="review">
         <div class="review__header">
-          <p class="review__title">Bailey - 2021</p>
+          <p class="review__title">Eve - 2021</p>
           <img src="img/stars.png" alt="5 Stars" class="review__stars">
         </div>
-        <p class="review__text">Woof Woof Woof, sniff, woof, slobber, woof!</p>
-      </div>
-    </div>
-    <div class="slideshow__slide slide--3">
-      <div class="review">
-        <div class="review__header">
-          <p class="review__title">Georgia - 2021</p>
-          <img src="img/stars.png" alt="5 Stars" class="review__stars">
-        </div>
-        <p class="review__text">Bailey had a great walk out with Holly! He came back and conked out within 5 minutes!
-          Couldn’t recommend enough 🐶</p>
-      </div>
-      <div class="review">
-        <div class="review__header">
-          <p class="review__title">Amy - 2021</p>
-          <img src="img/stars.png" alt="5 Stars" class="review__stars">
-        </div>
-        <p class="review__text">Excellent, reliable service.</p>
-      </div>
-      <div class="review">
-        <div class="review__header">
-          <p class="review__title">Bailey - 2021</p>
-          <img src="img/stars.png" alt="5 Stars" class="review__stars">
-        </div>
-        <p class="review__text">Woof Woof Woof, sniff, woof, slobber, woof!</p>
+        <p class="review__text">Waaaaaaaahhhhh</p>
       </div>
     </div>
 
+    <div class="slideshow__slide slide--3">
+      <div class="review">
+        <div class="review__header">
+          <p class="review__title">Bailey - 2021</p>
+          <img src="img/stars.png" alt="5 Stars" class="review__stars">
+        </div>
+        <p class="review__text">Woof Woof Woof, sniff, woof, slobber, woof!</p>
+      </div>
+      <div class="review">
+        <div class="review__header">
+          <p class="review__title">Georgia - 2021</p>
+          <img src="img/stars.png" alt="5 Stars" class="review__stars">
+        </div>
+        <p class="review__text">Bailey had a great walk out with Holly! He came back and conked out within 5 minutes!
+          Couldn’t recommend enough 🐶</p>
+      </div>
+      <div class="review">
+        <div class="review__header">
+          <p class="review__title">Amy - 2021</p>
+          <img src="img/stars.png" alt="5 Stars" class="review__stars">
+        </div>
+        <p class="review__text">Excellent, reliable service.</p>
+      </div>
+    </div>
   </div>
 
 </section>
@@ -84,13 +85,12 @@
 <script>
   const slideshows = document.querySelectorAll('.slideshow__container');
 
-  // Apply to all slideshows that you define with the markup wrote
+  // Applies JS to all slideshows
   slideshows.forEach(initSlideShow);
 
   function initSlideShow(slideshow) {
 
-    var slides = document.querySelectorAll(`.slideshow__slide`); // Get an array of slides
-    console.log(slides)
+    var slides = document.querySelectorAll(`.slideshow__slide`); // declare array of slides
 
     var index = 0,
       time = 5000;

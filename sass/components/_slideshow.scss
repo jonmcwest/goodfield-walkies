@@ -2,7 +2,7 @@
 
   &__container {
     width: 90%;
-    height: 40rem;
+    height: 35rem;
     margin: 5rem auto;
     border-radius: 5px;
     background-color: $color-white;
@@ -13,20 +13,20 @@
     justify-content: center;
     overflow: hidden;
 
-    @include respond(phone) {
-      height: 60rem;
+    @include respond(tab-port) {
+      height: 50rem;
     }
   }
 
   &__slide {
-    transform: translateX(-2000px);
+    opacity: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 3rem;
+    padding: 0 3rem;
     position: absolute;
-    transition: 1s;
+    transition: opacity 1s;
 
 
     @include respond(tab-port) {
@@ -40,7 +40,7 @@
     justify-content: center;
     color: $color-secondary;
     font-size: 4rem;
-    margin: 3rem 1rem;
+    margin: 1rem 1rem;
   }
 }
 
@@ -79,5 +79,5 @@
 }
 
 .active {
-  transform: translateX(0);
+  opacity: 1;
 }

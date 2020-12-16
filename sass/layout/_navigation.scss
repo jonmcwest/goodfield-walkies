@@ -78,11 +78,18 @@
       display: none;
     }
 
-    &-item {
+    &-item,
+    a,
+    a:active,
+    a:visited {
+
       font-size: 1.6rem;
       cursor: pointer;
       user-select: none;
       transition: .3s;
+      color: $color-secondary;
+      text-decoration: none;
+
 
       &:not(:last-child):hover {
         color: $color-primary;
