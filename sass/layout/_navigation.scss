@@ -19,7 +19,7 @@
     background-color: $color-primary;
     padding: 0 1rem;
     position: fixed;
-    z-index: 1000;
+    z-index: 3000;
     top: 0;
     display: none;
     align-items: center;
@@ -82,14 +82,12 @@
     a,
     a:active,
     a:visited {
-
       font-size: 1.6rem;
       cursor: pointer;
       user-select: none;
-      transition: .3s;
+      transition: 0.3s;
       color: $color-secondary;
       text-decoration: none;
-
 
       &:not(:last-child):hover {
         color: $color-primary;
@@ -123,10 +121,8 @@
     justify-content: center;
     cursor: pointer;
 
-
     i {
-
-      transition: .3s;
+      transition: 0.3s;
       padding: 1rem;
 
       &:hover {
