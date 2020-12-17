@@ -129,7 +129,10 @@ body {
     width: 80%;
     display: flex;
     align-items: center;
-    justify-content: space-around; }
+    justify-content: space-around;
+    overflow: hidden;
+    position: relative;
+    z-index: 2000; }
     @media only screen and (max-width: 56.25em) {
       .card__container {
         flex-direction: column;
@@ -340,6 +343,7 @@ body {
     .footer__list a,
     .footer__list :active,
     .footer__list :visited {
+      text-align: center;
       text-decoration: none;
       color: #fff;
       padding: 1rem 0;
@@ -408,7 +412,7 @@ body {
     background-color: #2FAc66;
     padding: 0 1rem;
     position: fixed;
-    z-index: 1000;
+    z-index: 10000;
     top: 0;
     display: none;
     align-items: center;
@@ -442,7 +446,7 @@ body {
     align-items: center;
     transition: 0.5s;
     position: relative;
-    z-index: 2;
+    z-index: 3000;
     color: #26547c; }
     @media only screen and (max-width: 37.5em) {
       .nav__list {
@@ -463,7 +467,7 @@ body {
       font-size: 1.6rem;
       cursor: pointer;
       user-select: none;
-      transition: .3s;
+      transition: 0.3s;
       color: #26547c;
       text-decoration: none; }
       .nav__list-item:not(:last-child):hover,
@@ -503,7 +507,7 @@ body {
     justify-content: center;
     cursor: pointer; }
     .nav__socials i {
-      transition: .3s;
+      transition: 0.3s;
       padding: 1rem; }
       .nav__socials i:hover {
         color: #2FAc66;
@@ -558,8 +562,17 @@ body {
         flex-direction: column; } }
 
 .section-services {
+  position: relative;
   width: 100vw;
-  padding-bottom: 2rem; }
+  padding: 5rem 0;
+  margin: 10rem 0;
+  background-image: linear-gradient(to top, rgba(47, 172, 102, 0.2), rgba(47, 172, 102, 0.9)), url(/img/dog-group.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .section-reviews {
   width: 100vw; }
@@ -570,7 +583,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fff; }
+  background-color: #F8F8F8; }
   @media only screen and (max-width: 56.25em) {
     .section-guidelines {
       flex-direction: column; } }
