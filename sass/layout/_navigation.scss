@@ -62,7 +62,7 @@
     align-items: center;
     transition: 0.5s;
     position: relative;
-    z-index: 2;
+    z-index: 3000;
     color: $color-secondary;
 
     @include respond(phone) {
